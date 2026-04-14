@@ -1,0 +1,25 @@
+# Stream Deck files
+*.sdPlugin/bin
+*.sdPlugin/logs
+*.sdPlugin/secrets.json
+
+# IDE / Editor folders
+.vscode/
+.idea/
+*.suo
+*.user
+*.sln.docstates
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Node.js (If using Javascript/React/Vue)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Build Outputs
+bin/
+obj/
+dist/

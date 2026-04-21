@@ -5,9 +5,9 @@
 
 A simple core module for integrating Grafana metrics into peripheral vision displays, originally developed for and used by the [Grafana plugin](https://marketplace.elgato.com/product/grafana-8a8b4a9d-6633-4583-88b6-1cc8fab45600) for the [Elgato Stream Deck](https://www.elgato.com/ww/en/s/explore-stream-deck). This library enables developers to create their own implementations that bring Grafana stats and gauges directly to your workspace, keeping critical system metrics always visible without burying them in browser tabs.
 
-## 🚀 Beta Release Available!
+## Beta (plugin) Release Available!
 
-We're excited to invite you to test our beta release and experience the future of observability! Download the latest beta from our [Releases page](https://github.com/glitchy-software/stream-deck-grafana-core/releases) and let us know what you think.
+We're excited to invite you to test our beta release and experience the future of observability! Download the latest beta plugin from our [Releases page](https://github.com/glitchy-software/stream-deck-grafana-core/releases) and let us know what you think.
 
 ### What You Can Do Right Now:
 - Display live Grafana stats and gauges on your Stream Deck
@@ -15,11 +15,11 @@ We're excited to invite you to test our beta release and experience the future o
 - Monitor system health at a glance during incidents
 - Customize layouts for your specific workflows
 
-## 📧 Feedback Welcome!
+## Feedback Welcome!
 
 Your feedback is invaluable as we refine this tool for production use. Please share your experiences, bug reports, feature requests, or any other thoughts via email: **contact@glitchysoftware.com**. We read every message and are committed to making this the best observability tool possible.
 
-## 🎯 Purpose of This Repository
+## Purpose of This Repository
 
 This repository contains the core Grafana API interaction module that powers our Stream Deck plugin. While we've built it for the Stream Deck ecosystem, the underlying code is platform-agnostic and designed to be extensible. Our vision is to enable developers to create implementations for any peripheral display device—think smart displays, secondary monitors, wearable tech, or even AR glasses.
 
@@ -29,7 +29,7 @@ This repository contains the core Grafana API interaction module that powers our
 - Experiment with new ways to keep observability in your peripheral vision
 - Contribute back improvements that benefit the entire community
 
-## ✨ Key Features
+## Key Features
 
 - **Secure API Integration**: AES-256 encrypted token storage with read-only access
 - **Real-time Metrics**: Live updates from Grafana panels (stats, gauges, etc.)
@@ -38,7 +38,7 @@ This repository contains the core Grafana API interaction module that powers our
 - **Manual Overrides**: Full customization for bespoke implementations
 - **Battle-Tested**: Featured at GrafanaCon 2026 with real production patterns
 
-## 🛠 Installation
+## Installation
 
 ### Prerequisites
 - Node.js 16+
@@ -59,7 +59,7 @@ This repository contains the core Grafana API interaction module that powers our
 
    ```
 
-## 📖 Usage Examples
+## Usage Examples
 
 Here are some practical examples demonstrating how to use the core classes in this library. These are based on the unit tests and showcase common use cases for integrating with Grafana.
 
@@ -152,7 +152,7 @@ const displayValue = GrafanaAPI.getStatDisplayValue(queryResult, "percentunit");
 console.log(`CPU Usage: ${displayValue}`);
 ```
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions from the community! Whether you're fixing bugs, adding features, or creating implementations for new platforms:
 
@@ -169,24 +169,24 @@ npm test
 npm run build
 ```
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Grafana Labs** for their incredible support and for featuring our work at [GrafanaCon 2026](https://grafana.com/events/grafanacon/agenda/micro-dashboards-improve-incident-response/). Their commitment to the observability community made this project possible.
 - The SRE and DevOps community for inspiring us to think differently about incident response
 - All our beta testers who provided invaluable feedback during development
 
-## 📞 Contact & Support
+## Contact & Support
 
 - **Email:** contact@glitchysoftware.com
 - **Website:** [glitchysoftware.com](https://glitchysoftware.com)
 - **GitHub Issues:** [Report bugs or request features](https://github.com/glitchy-software/stream-deck-grafana-core/issues)
 - **Documentation:** [Full setup guide](https://glitchysoftware.com/grafana/setup-guide.php)
 
-## 🔮 Roadmap
+## Roadmap
 
 - [ ] Multi-platform SDK releases
 - [ ] Additional panel types support (bar graphs)

@@ -15,7 +15,7 @@ describe('Testing Encryption Hander', () => {
         const importedKey = await EncryptionHander.importKey(exported);
 
         //const text = "Sensitive payload 123";
-        const text = "glsa_WdnRSgR06P8wtHuBn9RhqZaaOC1f2slN_c2787615";
+        const text = "glsa_YourApiTokenHereBn9RhqZaaOC1f2slN_c231157"; // Test Token 
         
 
         const encrypted = await EncryptionHander.encrypt(importedKey, text);

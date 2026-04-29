@@ -164,9 +164,8 @@ We welcome contributions from the community! Whether you're fixing bugs, adding 
 
 ### Development Setup
 ```bash
-npm run dev
+npm install
 npm test
-npm run build
 ```
 
 ## License

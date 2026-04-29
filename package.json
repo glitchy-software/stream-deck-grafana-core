@@ -1,0 +1,26 @@
+{
+    "name": "stream-deck-grafana-core",
+    "version": "1.0.0",
+    "description": "A core library for handling, Prometheus data source interaction, value unit formatting, encryption using Web Crypto API for Stream Deck Grafana integration.",
+    "main": "jest.config.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "build": "tsc",
+        "test": "jest"
+    },
+    "keywords": ["Grafana", "Stream Deck"],
+    "license": "ISC",
+    "author": "Gerard de Jong",
+    "devDependencies": {
+        "@tsconfig/node20": "^20.1.2",
+        "@types/jest": "^30.0.0",
+        "@types/node": "~20.15.0",
+        "jest": "^30.3.0",
+        "rollup": "^4.0.2",
+        "ts-jest": "^29.4.9",
+        "tslib": "^2.6.2",
+        "typescript": "^5.9.3"
+    }
+}

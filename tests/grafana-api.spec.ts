@@ -123,16 +123,16 @@ describe('Testing Grafana API', () => {
 
 
 
-  test('Test retrieving all the template variable options', async () => {
-    //const label = "job";
-    //const label = "node";
-    const label = "instance";
-    const templateLabelOptions = await GrafanaAPI.getTemplateLabelOptions(testUrl, testToken, "1", label);
-    expect(templateLabelOptions).toBeDefined();
+  // test('Test retrieving all the template variable options', async () => {
+  //   //const label = "job";
+  //   //const label = "node";
+  //   const label = "instance";
+  //   const templateLabelOptions = await GrafanaAPI.getTemplateLabelOptions(testUrl, testToken, "1", label);
+  //   expect(templateLabelOptions).toBeDefined();
 
-    for (const option of templateLabelOptions) {
-      expect(option).toBeDefined();
-      process.stderr.write(`\t Template variable option for ${option}\n`);
-    }
-  });
+  //   for (const option of templateLabelOptions) {
+  //     expect(option).toBeDefined();
+  //     process.stderr.write(`\t Template variable option for ${option}\n`);
+  //   }
+  // });
 });

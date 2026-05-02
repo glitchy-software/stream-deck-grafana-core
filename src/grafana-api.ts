@@ -186,41 +186,6 @@ export class GrafanaAPI {
         return (await response.json()) as GrafanaDashboardResponse;
     }
     
-    public static getDashboardPanelThresholds(panel: GrafanaDashboardPanel): GrafanaDashboardPanelThresholdStep[] {
-        let thresholds = [];
-        for (const step of panel.fieldConfig.defaults.thresholds.steps) {
-            thresholds.push({
-                color: GrafanaAPI.rgbaToHex(step.color),
-                value: step.value ?? 0
-            });
-        }
-        return thresholds;
-    }
-    
-    // TODO: This whole function is fucked! Thanks AI!
-    private static rgbaToHex(rgba: string): string {
-        const match = rgba
-        .replace(/\s+/g, "")
-        .match(/^rgba?\((\d{1,3}),(\d{1,3}),(\d{1,3})(?:,([01]?\.?\d*))?\)$/);
-
-        if (!match) {
-          throw new Error(`Invalid RGBA color: ${rgba}`);
-        }
-                  //Math.min(Math.max(value, min), max);
-        const r = GrafanaAPI.clamp(parseInt(match[1], 10), 0, 255);
-        const g = GrafanaAPI.clamp(parseInt(match[2], 10), 0, 255);
-        const b = GrafanaAPI.clamp(parseInt(match[3], 10), 0, 255);
-        const a = match[4] !== undefined
-        ? GrafanaAPI.clamp(Math.round(parseFloat(match[4]) * 255), 0, 255)
-        : 255;
-
-        const toHex = (n: number) => n.toString(16).padStart(2, "0");
-
-        return a === 255
-        ? `#${toHex(r)}${toHex(g)}${toHex(b)}`
-        : `#${toHex(r)}${toHex(g)}${toHex(b)}${toHex(a)}`;
-    }
-
     private static clamp(value: number, min: number, max: number): number {
         return Math.min(Math.max(value, min), max);
     }

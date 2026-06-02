@@ -7,7 +7,7 @@ A simple core module for integrating Grafana metrics into peripheral vision disp
 
 ## Beta (plugin) Release Available!
 
-We're excited to invite you to test our beta release and experience the future of observability! Download the latest beta plugin from our [Releases page](https://github.com/glitchy-software/stream-deck-grafana-core/releases) and let us know what you think.
+We're excited to invite you to test our beta release and experience the future of observability!
 
 ### What You Can Do Right Now:
 - Display live Grafana stats and gauges on your Stream Deck
